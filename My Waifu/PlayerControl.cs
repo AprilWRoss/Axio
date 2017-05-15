@@ -15,8 +15,11 @@ public class PlayerControl : MonoBehaviour {
 	public float StartWalkAngle;
 	private GameObject CurrentWeapon;
 	private GUIMGR GuiManager;
+	private Rigidbody Body;
+	private Vector3 Mov;
 
 	void Start () {
+		Body = gameObject.GetComponent<Rigidbody> ();
 		Anim = transform.FindChild ("Model").GetComponent<Animator> ();
 		CurrentWeapon = transform.FindChild ("CurrentWeapon").gameObject;
 		GuiManager = GameObject.Find ("MGR").GetComponent<GUIMGR> ();
@@ -49,14 +52,19 @@ public class PlayerControl : MonoBehaviour {
 			if (Ymov < 0)
 				Ymov = -0.7f;
 		}
+		//transform.position = Vector3.SmoothDamp (transform.position, transform.position + new Vector3 (Xmov * Speed, 0, Ymov * Speed), ref refMov, 0.25f);
+		Mov = Vector3.SmoothDamp (Mov, new Vector3 (Xmov * Speed, 0, Ymov * Speed), ref refMov, 0.1f);
+		Body.velocity = Mov;
+		//Debug.Log (new Vector3 (Xmov * Speed, 0, Ymov * Speed));
+		/*if (Body.velocity.x > MaxSpeed)
+			Body.velocity = new Vector3 (MaxSpeed, 0, Body.velocity.z);
+		if (Body.velocity.x < -MaxSpeed)
+			Body.velocity = new Vector3 (-MaxSpeed, 0, Body.velocity.z);
 
-		transform.position = Vector3.SmoothDamp (transform.position, transform.position + new Vector3 (Xmov * Time.deltaTime * Speed, 0, Ymov * Time.deltaTime * Speed), ref refMov, 0.25f);
-
-		//ROTATION
-		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		RaycastHit[] hitD = Physics.RaycastAll (ray);
-		transform.LookAt (hitD[0].point);
-		transform.rotation = Quaternion.Euler (new Vector3 (0, transform.rotation.eulerAngles.y, 0));
+		if (Body.velocity.z > MaxSpeed)
+			Body.velocity = new Vector3 (Body.velocity.x, 0, MaxSpeed);
+		if (Body.velocity.z < -MaxSpeed)
+			Body.velocity = new Vector3 (Body.velocity.x, 0, -MaxSpeed);*/
 
 		//ANIMATION
 		Animator[] WeaponAnims = CurrentWeapon.GetComponentsInChildren<Animator> ();
@@ -135,7 +143,7 @@ public class PlayerControl : MonoBehaviour {
 		}
 
 		//SHOOT
-		if (Input.GetMouseButton (0)) {
+		if (Input.GetMouseButtonDown (0)) {
 			int cCount = CurrentWeapon.transform.childCount;
 			for (int i = 0; i < cCount; i++) {
 				Weapon WPN = CurrentWeapon.transform.GetChild (i).GetComponent<Weapon>();
@@ -156,6 +164,26 @@ public class PlayerControl : MonoBehaviour {
 						WPN.Reload ();
 				}
 			}
+		}
+
+		if (Input.GetKeyDown (KeyCode.Q))
+			DropWeapon (1);
+	}
+
+	void FixedUpdate() {
+		//ROTATION
+		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+		RaycastHit[] hitD = Physics.RaycastAll (ray);
+		transform.LookAt (hitD[0].point);
+		transform.rotation = Quaternion.Euler (new Vector3 (0, transform.rotation.eulerAngles.y, 0));
+	}
+
+	public void DropWeapon(int index) {
+		index--;
+		if (CurrentWeapon.transform.childCount > index) {
+			GameObject WPN = CurrentWeapon.transform.GetChild (index).gameObject;
+			Instantiate (WPN.GetComponent <Weapon> ().WPNDropped, transform.position + transform.forward, Quaternion.Euler(90, 0, 0));
+			Destroy (WPN);
 		}
 	}
 }

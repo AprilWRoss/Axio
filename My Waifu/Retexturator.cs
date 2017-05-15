@@ -8,10 +8,21 @@ public class Retexturator : MonoBehaviour {
 	private float origX;
 	private float origY;
 
+	public bool AffectX;
+	public bool AffectY;
+
 	void Start () {
 		mis = gameObject.GetComponent<Renderer> ().material;
 		origX = mis.mainTextureScale.x;
 		origY = mis.mainTextureScale.y;
-		mis.mainTextureScale = new Vector2 (origX * transform.localScale.x, origY * transform.localScale.z);
+
+		if (AffectX && AffectY)
+			mis.mainTextureScale = new Vector2 (origX * transform.lossyScale.x, origY * transform.lossyScale.z);
+
+		if (AffectX && !AffectY)
+			mis.mainTextureScale = new Vector2 (origX * transform.lossyScale.x, origY);
+		
+		if (!AffectX && AffectY)
+			mis.mainTextureScale = new Vector2 (origX, origY * transform.lossyScale.z);
 	}
 }

@@ -12,6 +12,7 @@ public class GUIMGR : MonoBehaviour {
 	private Text ClipSize;
 
 	void Start() {
+		Application.targetFrameRate = 60;
 		ClipSize = GameObject.Find ("ClipSize").GetComponent<Text> ();
 		transform.localScale = new Vector2 ((float)Screen.width / origX, (float)Screen.height / origY);
 		SetCrosshair (0);
