@@ -14,34 +14,50 @@ Elemente de baza:
 
 - perspectiva top-down
 
-- playerul se misca in principal cu viteza constanta
 
-- playerul se misca cu W,A,S,D.
+Playerul: - playerul se misca in principal cu viteza constanta
 
-- playerul schimba directia in care tinteste folosind mouseul
+	  - playerul se misca cu W,A,S,D.
 
-- indiferent de directia in care se uita butoanele W,A,S,D vor actiona la fel, respectiv 
-W si S vor misca playerul pe verticala, sus si jos, iar A si D stanga si dreapta pe orizontala 
+	  - playerul schimba directia in care tinteste folosind mouseul
 
-- pe ecran se afla un crosshair care indica pozitia mouseului si ajuta la tintit
+	  - indiferent de directia in care se uita butoanele W,A,S,D vor actiona la fel, respectiv 
+	    W si S vor misca playerul pe verticala, sus si jos, iar A si D stanga si dreapta pe orizontala 
 
-- camera va urmari playerul si este in principal fixata deasupra lui, el fiind in centrul imaginii, insa
-poate fi mutata putin atunci cand mouseul se afla in margini
+	  - pe ecran se afla un crosshair care indica pozitia mouseului si ajuta la tintit
 
-- se misca putin mai repede decat inamicii de baza 
+	  - camera va urmari playerul si este in principal fixata deasupra lui, el fiind in centrul imaginii, insa
+	    poate fi mutata putin atunci cand mouseul se afla in margini
 
+	  - se misca putin mai repede decat inamicii de baza 
 
-- in nivel se pot gasi obiecte folosibile pe post de cover
+	  - in nivel se pot gasi obiecte folosibile pe post de cover
 
-- anumite obiecte sunt indistructibile, altele pot fi distruse
+	  - anumite obiecte sunt indistructibile, altele pot fi distruse
 
-- anumite obiecte explodeaza o data ce sunt distruse 
+ 	  - anumite obiecte explodeaza o data ce sunt distruse 
 
-- nu exista NPC-uri pasnice. Tot ce misca si e viu in afara de tine trebuie sa moara
+	  - nu exista NPC-uri pasnice. Tot ce misca si e viu in afara de tine trebuie sa moara
 
-- se poate interactiona cu anumite obiecte
+	  - se poate interactiona cu anumite obiecte
 
-- butonul pt interactiune este [E]
+	  - butonul pt interactiune este [E]
+
+	  - are viata limitata
+
+	  - poate face roll folosind tasta [SHIFT]
+
+          - poate apuca inamici de baza si ii poate folosi ca scut uman folosind [CONTROL]
+ 
+	  - inamicii apucati nu pot riposta si pot fi aruncati in ceilalti inamici, dand damage 
+
+	  - playerul va avea o bara pe care o va incarca dand damage
+
+          - cand bara este plina, folosind tasta [Q] va intra in Berserk Mode
+
+          - in Berserk Mode playerul se misca mult mai repede, are fire rateul si damageul crescut, gloantele sunt mai mari, clip sizeul se dubleaza
+
+ 	  - Berserk Mode-ul dureaza in jur de 10 secunde
 
 - armele: - sunt de mai multe tipuri: one handed, two handed, melee
 
@@ -94,7 +110,7 @@ poate fi mutata putin atunci cand mouseul se afla in margini
 
           - armele melee normale nu pot fi selectate 
 
-          - pentru a trece din single wield in dual wield se va folosi tasta [4]
+          - pentru a trece din single wield in dual wield se va folosi tasta [SPACE]
 
           - arma primara se afla in mana dreapta
 
@@ -104,11 +120,11 @@ poate fi mutata putin atunci cand mouseul se afla in margini
 
           - pentru a trage cu arma primara se va folosi [CLICK STANGA]
           
-          - pentru a inversa armele intre ele (cea secundara sa devina principala si vice-versa) se va folosi tasta [SPACE]
+          - pentru a inversa armele intre ele (cea secundara sa devina principala si vice-versa) se va folosi tasta [F]
 
  	  - in momentul tranzitionarii din nou la single wield, se va face single wield pe arma principala
 
-          - in cazul dual wieldului, daca armele sunt la fel, se va folosi [CLICK STANGA] pt tras, iar armele vor trage alternativ, cand una cand alta.
+          - in cazul dual wieldului, daca armele sunt la fel, se va folosi [CLICK STANGA] pt tras, iar armele vor trage alternativ sau simultan, depinzand daca sunt automate sau semi automate
 
           - daca armele sunt diferite, atunci se va trage cu [CLICK STANGA] pt arma primara si cu click dreapta pt arma secundara. 
 
@@ -122,7 +138,46 @@ poate fi mutata putin atunci cand mouseul se afla in margini
 
           
 
+- Cutii: - sunt de mai multe tipuri: destructibile, sau indestructibile
+
+         - unele dintre cele destructibile pot dropa anumite arme, sau kituri de viata
+
+         - anumite cutii contin arme. Pot fi recunoscute dupa textura (ex va scrie "Explosives" sau weapon Crate")
+
+         - cutiile care contin arme pot fi deschise cu [E]. Contin arme de un anumit tip.
+
+         - cutiile cu "Explosives" pot fi detonate daca tragi in ele. 
+
+         - odata lootate, cutiile vor actiune ca niste cutii de baza, vor fi destructibile, nu vor exploda, dar nici nu vor dropa nimic
+
+         - o cutie explodata nu dropeaza
+
+- inamicii: - vor varia in principal prin armele pe care le folosesc
+
+            - armele lor vor fi la fel ca cele ale playerului, insa gloantele vor fi putin mai lente
+
+            - si ei vor fi nevoiti sa faca reload
+
+            - au viata, insa inamicii de baza au viata putina 
+           
+	    - nu pot lua arme de pe jos
+
+            - vor fi anumiti mini-bossi pe parcursul jocului
+
+            - bossii vor fi in principal versiuni bufate ale inamicilor de baza
+
+            - vor avea pattern-uri de atac si mai multa viata decat inamicii de baza
+
+	    - in afara de inamicii de baza si de bossi vor fi si un fel de extraterestrii
+
+ 	    - extraterestrii ataca doar melee si sunt rapizi
+
+            - vin in doua forme: mari si mici
+
+            - aia mari au mult mai multa viata, iar cand mor se sparg in mai multi extraterestrii mici
 
 
 
-    
+
+        
+               
