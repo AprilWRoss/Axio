@@ -1,0 +1,13 @@
+- Cutii: - sunt de mai multe tipuri: destructibile, sau indestructibile
+
+         - unele dintre cele destructibile pot dropa anumite arme, sau kituri de viata
+
+         - anumite cutii contin arme. Pot fi recunoscute dupa textura (ex va scrie "Explosives" sau weapon Crate")
+
+         - cutiile care contin arme pot fi deschise cu [E]. Contin arme de un anumit tip.
+
+         - cutiile cu "Explosives" pot fi detonate daca tragi in ele. 
+
+         - odata lootate, cutiile vor actiune ca niste cutii de baza, vor fi destructibile, nu vor exploda, dar nici nu vor dropa nimic
+
+         - o cutie explodata nu dropeaza

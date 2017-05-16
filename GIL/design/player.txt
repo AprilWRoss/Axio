@@ -1,0 +1,47 @@
+Playerul: - playerul se misca in principal cu viteza constanta
+
+	  - playerul se misca cu W,A,S,D.
+
+	  - playerul schimba directia in care tinteste folosind mouseul
+
+	  - indiferent de directia in care se uita butoanele W,A,S,D vor actiona la fel, respectiv 
+	    W si S vor misca playerul pe verticala, sus si jos, iar A si D stanga si dreapta pe orizontala 
+
+	  - pe ecran se afla un crosshair care indica pozitia mouseului si ajuta la tintit
+
+	  - camera va urmari playerul si este in principal fixata deasupra lui, el fiind in centrul imaginii, insa
+	    poate fi mutata putin atunci cand mouseul se afla in margini
+
+	  - se misca putin mai repede decat inamicii de baza 
+
+	  - in nivel se pot gasi obiecte folosibile pe post de cover
+
+	  - anumite obiecte sunt indistructibile, altele pot fi distruse
+
+ 	  - anumite obiecte explodeaza o data ce sunt distruse 
+
+	  - nu exista NPC-uri pasnice. Tot ce misca si e viu in afara de tine trebuie sa moara
+
+	  - se poate interactiona cu anumite obiecte
+
+	  - butonul pt interactiune este [E]
+
+	  - are viata limitata
+
+          - viata se incarca folosind health kituri
+
+          - health kiturile regenereaza viata in clipa in care sunt colectate
+
+	  - poate face roll folosind tasta [SHIFT]
+
+          - poate apuca inamici de baza si ii poate folosi ca scut uman folosind [CONTROL]
+ 
+	  - inamicii apucati nu pot riposta si pot fi aruncati in ceilalti inamici, dand damage 
+
+	  - playerul va avea o bara pe care o va incarca dand damage
+
+          - cand bara este plina, folosind tasta [Q] va intra in Berserk Mode
+
+          - in Berserk Mode playerul se misca mult mai repede, are fire rateul si damageul crescut, gloantele sunt mai mari, clip sizeul se dubleaza
+
+ 	  - Berserk Mode-ul dureaza in jur de 10 secunde

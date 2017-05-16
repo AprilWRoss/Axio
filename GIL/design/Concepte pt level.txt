@@ -1,0 +1,7 @@
+Concepte de baza ale level designului
+
+- Nava e impartita in mai multe zone. 
+- Fiecare zona e ca un sub nivel care are o anumita tema (reprezinta zone de pe nava)
+- se pot intalni in joc turete
+- poti folosi o tureta cu [E]
+- tureta functioneaza ca o arma speciala, dar fara munitie limitata, in schimb este stationara 
