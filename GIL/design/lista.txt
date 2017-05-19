@@ -63,7 +63,7 @@ Playerul: - playerul se misca in principal cu viteza constanta
 
  	  - Berserk Mode-ul dureaza in jur de 10 secunde
 
-- armele: - sunt de mai multe tipuri: one handed, two handed, melee
+- Armele: - sunt de mai multe tipuri: one handed, two handed, melee
 
           - exista 2 sloturi pt arme si un slot special pt melee
 
@@ -124,13 +124,11 @@ Playerul: - playerul se misca in principal cu viteza constanta
 
           - pentru a trage cu arma primara se va folosi [CLICK STANGA]
           
-          - pentru a inversa armele intre ele (cea secundara sa devina principala si vice-versa) se va folosi tasta [F]
+          - pentru a inversa armele intre ele (cea secundara sa devina principala si vice-versa) se vor folosi tastele de selectie [1] si [2]
 
  	  - in momentul tranzitionarii din nou la single wield, se va face single wield pe arma principala
 
-          - in cazul dual wieldului, daca armele sunt la fel, se va folosi [CLICK STANGA] pt tras, iar armele vor trage alternativ sau simultan, depinzand daca sunt automate sau semi automate
-
-          - daca armele sunt diferite, atunci se va trage cu [CLICK STANGA] pt arma primara si cu click dreapta pt arma secundara. 
+	  - se va trage cu [CLICK STANGA] pt arma primara si cu click dreapta pt arma secundara. 
 
           - reloadul se va face automat atunci cand ambele arme raman fara munitie
 
@@ -140,7 +138,6 @@ Playerul: - playerul se misca in principal cu viteza constanta
 
           - nu se poate face dual wield cu arme speciale 
 
-          
 
 - Cutii: - sunt de mai multe tipuri: destructibile, sau indestructibile
 
