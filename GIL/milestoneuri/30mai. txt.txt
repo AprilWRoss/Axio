@@ -1,0 +1,16 @@
+30 mai 
+
+- cutii: - destructibile, lootabile, indestructibile, explozibile
+         - se diferentiaza dupa textura 
+         - pot contine arme de baza sau speciale sau medkituri
+
+- turete: -sunt imobile
+          -nu au nici munitie, nici clip size
+          -se trage cu [Click stanga]
+
+-bossi:- au un pattern de atac 
+       - lanseaza o rafala de gloante, apoi fac reload 
+
+-Level designul + aranjarea levelului 
+
+         

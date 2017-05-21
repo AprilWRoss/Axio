@@ -1,0 +1,36 @@
+Milestoneuri 
+
+24 mai, miercuri
+
+- sistem de selectie al armemlor:  -se folosesc tastele [1] si [2], iar pt arma speciala cu tasta [3]
+                                   -se poate folosi si scroll wheel-ul pt selectie 
+                                   
+
+- functionarea armelor two handed: -nu se poate face dual wield cu ele 
+
+- luarea armelor de pe jos si schimbarea lor: -se face cu tasta [E]
+                                              -daca e cazul unui exchange de arme, se va face exchange cu arma selectata in momentul acela
+
+- dual wield complet integrat: -in dual wield acuratetea scade mult 
+                               -se trage cu [Click Stanga] pt arma primara
+			       -se trage cu [Click dreapta] pt arma secundara 
+  			       -se face reload automat cand ambele arme raman fara munitie
+			       -daca doar o arma are nevoie de reload, reloadul o va incarca doar pe ea, in timp ce cealalta poate fi folosita
+			       -reload timeul in dual wield e mereu acelasi
+
+Optional:
+
+Introducerea amrelor speciale: -au slot separat
+                               - au munitie limitata
+
+Arme melee: -au slot separat
+            - se foloseste tasta [SHIFT]
+
+Inamici:- au 30 HP
+        - stau pe loc pana vad playerul
+        - gloantele lor se misca mai incet decat ale playerului
+        - se misca mai incet decat playerul
+         
+Sistem de viata: playerul are 100 viata 
+
+HP kiturile: refac 25 de viata
