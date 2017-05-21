@@ -7,6 +7,6 @@ public class ForwardMov : MonoBehaviour {
 	public float Speed;
 
 	void Update () {
-		transform.position += transform.up * Speed;
+		transform.position += transform.up * Speed * 100 * Time.deltaTime;
 	}
 }
